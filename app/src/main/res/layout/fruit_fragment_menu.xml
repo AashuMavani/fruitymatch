@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fruit_ui_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.nativegame.natyengine.ui.GameImage
+        android:id="@+id/image_logo_bg"
+        android:layout_width="@dimen/image_logo_bg_width"
+        android:layout_height="@dimen/image_logo_bg_width"
+        android:src="@drawable/fruit_ui_logo_bg_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <com.nativegame.natyengine.ui.GameImage
+        android:id="@+id/image_logo"
+        android:layout_width="@dimen/image_logo_width"
+        android:layout_height="@dimen/image_logo_width"
+        android:src="@drawable/fruit_ui_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_start"
+        android:layout_width="@dimen/btn_shop_width"
+        android:layout_height="@dimen/btn_shop_width"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/fruit_ui_btn_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo" />
+<!--    //Admob native add-->
+<!--        <include-->
+<!--            android:id="@+id/view_native_ads"-->
+<!--            layout="@layout/fruit_dialog_admob_native_ad"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            tools:layout_editor_absoluteY="0dp" />-->
+<!--         applovin native Ads-->
+<!--    <include-->
+<!--        android:id="@+id/view_native_ads"-->
+<!--        layout="@layout/fruit_view__native_ads"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:layout_editor_absoluteY="0dp" />-->
+
+
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_setting"
+        android:layout_width="@dimen/btn_round_width"
+        android:layout_height="@dimen/btn_round_width"
+        android:layout_margin="@dimen/margin_20"
+        android:background="@drawable/fruit_ui_btn_setting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--   applovin banner Ads-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layoutBannerAdTop"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        android:orientation="vertical"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:paddingBottom="5dp"-->
+<!--        android:visibility="gone"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/lblAdSpaceTop"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:text="Reserved space for Ads"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="15dp" />-->
+<!--    </LinearLayout>-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

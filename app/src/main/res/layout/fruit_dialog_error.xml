@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/image_dialog"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:background="@drawable/f_ui_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3:2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.nativegame.natyengine.ui.GameText
+        android:id="@+id/txt_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/fruit_baloo"
+        android:gravity="center"
+        android:text="@string/txt_error"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/image_dialog"
+        app:layout_constraintStart_toStartOf="@id/image_dialog"
+        app:layout_constraintTop_toTopOf="@id/image_dialog" />
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="@dimen/txt_dialog_size"
+        android:layout_height="@dimen/txt_dialog_size"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@drawable/fruit_ui_btn_cancel"
+        app:layout_constraintEnd_toEndOf="@id/image_dialog"
+        app:layout_constraintTop_toTopOf="@id/image_dialog" />
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_retry"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/fruit_ui_btn_yes"
+        app:layout_constraintDimensionRatio="5:2"
+        app:layout_constraintEnd_toEndOf="@id/image_dialog"
+        app:layout_constraintStart_toStartOf="@id/image_dialog"
+        app:layout_constraintTop_toBottomOf="@id/txt_error" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

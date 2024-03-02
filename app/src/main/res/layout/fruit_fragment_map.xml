@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fruit_ui_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/fruit_view_map_state" />
+<!--    Admob banner Ad-->
+<!--    <include layout="@layout/fruit_dialog_admob_ads"/>-->
+
+
+    <include
+        layout="@layout/fruit_view_map_level"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_wheel"
+        android:layout_width="@dimen/btn_small_width"
+        android:layout_height="@dimen/btn_small_width"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@drawable/fruit_ui_btn_wheel_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_setting"
+        android:layout_width="@dimen/btn_round_width"
+        android:layout_height="@dimen/btn_round_width"
+        android:layout_margin="@dimen/margin_20"
+        android:background="@drawable/fruit_ui_btn_setting"
+        app:layout_constraintBottom_toTopOf="@id/adView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+<!--admob banner Ad-->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="@string/txt_admob_banner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
